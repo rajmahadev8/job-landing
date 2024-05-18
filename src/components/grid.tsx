@@ -1,7 +1,7 @@
 "use client";
 import { cn } from "@/utils/cn";
 import React from "react";
-// import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
+import { BentoGrid, BentoGridItem } from "./global/bento-grid";
 import {
   IconBoxAlignRightFilled,
   IconClipboardCopy,
@@ -11,13 +11,11 @@ import {
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { BentoGrid, BentoGridItem } from "./global/bento-grid";
 
 export function BentoGridThirdDemo() {
   return (
     <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
       {items.map((item, i) => (
-
         <BentoGridItem
           key={i}
           title={item.title}
@@ -27,8 +25,6 @@ export function BentoGridThirdDemo() {
           icon={item.icon}
         />
       ))}
-      
-
     </BentoGrid>
   );
 }
@@ -157,7 +153,7 @@ export const SkeletonThree = () => {
         backgroundSize: "400% 400%",
       }}
     >
-      <motion.div className="h-full w-full min-h-[9rem] rounded-lg"></motion.div>
+      <motion.div className="h-full w-full rounded-lg"></motion.div>
     </motion.div>
   );
 };
@@ -194,7 +190,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src=""
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -209,7 +205,7 @@ const SkeletonFour = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center">
         <Image
-          src=""
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -227,7 +223,7 @@ const SkeletonFour = () => {
         className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/[0.1] border border-neutral-200 flex flex-col items-center justify-center"
       >
         <Image
-          src=""
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -280,7 +276,7 @@ const SkeletonFive = () => {
         className="flex flex-row rounded-2xl border border-neutral-100 dark:border-white/[0.2] p-2  items-start space-x-2 bg-white dark:bg-black"
       >
         <Image
-          src=""
+          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
           alt="avatar"
           height="100"
           width="100"
@@ -303,10 +299,10 @@ const SkeletonFive = () => {
 };
 const items = [
   {
-    title: "Step - 1",
+    title: "AI Content Generation",
     description: (
       <span className="text-sm">
-        Create Your Profile and add your details.
+        Experience the power of AI in generating unique content.
       </span>
     ),
     header: <SkeletonOne />,
@@ -314,10 +310,10 @@ const items = [
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Step - 2",
+    title: "Automated Proofreading",
     description: (
       <span className="text-sm">
-        Explore Personalized Job Recommendations.
+        Let AI handle the proofreading of your documents.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -325,37 +321,37 @@ const items = [
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Step - 3",
+    title: "Contextual Suggestions",
     description: (
       <span className="text-sm">
-        Apply with Ease using our smart recommendation.
+        Get AI-powered suggestions based on your writing context.
       </span>
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
-//   {
-//     title: "Sentiment Analysis",
-//     description: (
-//       <span className="text-sm">
-//         Understand the sentiment of your text with AI analysis.
-//       </span>
-//     ),
-//     header: <SkeletonFour />,
-//     className: "md:col-span-2",
-//     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
-//   },
+  {
+    title: "Sentiment Analysis",
+    description: (
+      <span className="text-sm">
+        Understand the sentiment of your text with AI analysis.
+      </span>
+    ),
+    header: <SkeletonFour />,
+    className: "md:col-span-2",
+    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+  },
 
-//   {
-//     title: "Text Summarization",
-//     description: (
-//       <span className="text-sm">
-//         Summarize your lengthy documents with AI technology.
-//       </span>
-//     ),
-//     header: <SkeletonFive />,
-//     className: "md:col-span-1",
-//     icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
-//   },
+  {
+    title: "Text Summarization",
+    description: (
+      <span className="text-sm">
+        Summarize your lengthy documents with AI technology.
+      </span>
+    ),
+    header: <SkeletonFive />,
+    className: "md:col-span-1",
+    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+  },
 ];
