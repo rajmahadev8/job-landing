@@ -54,9 +54,9 @@ export default function Home() {
                   size={'lg'}
                   className="p-8 mb-8 md:mb-0 text-2xl w-auto sm:w-fit border-t-2 rounded-full border-[#4D4D4D] bg-[#1F1F1F] hover:bg-white group transition-all flex items-center justify-center gap-4 hover:shadow-xl hover:shadow-neutral-500 duration-500"
                 >
-                  <span className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center font-sans group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
+                  <a href='http://localhost:5173/' className="bg-clip-text text-transparent bg-gradient-to-r from-neutral-500 to-neutral-600  md:text-center font-sans group-hover:bg-gradient-to-r group-hover:from-black goup-hover:to-black">
                     Start For Free Today
-                  </span>
+                  </a>
                 </Button>
                 <h1 className="text-5xl md:text-8xl  bg-clip-text text-transparent bg-gradient-to-b from-white to-neutral-600 font-sans font-bold">
                   Find your jobs recommended by AI
@@ -101,7 +101,7 @@ export default function Home() {
           <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></span>
         </span>
         <div className="relative flex space-x-2 items-center z-10 rounded-full bg-zinc-950 py-2.5 px-4 ring-1 ring-white/10 ">
-          <span>{`Create your profile`}</span>
+          <a href='http://localhost:5173/'>{`Create your profile`}</a>
           <svg
             width="16"
             height="16"
@@ -141,7 +141,7 @@ export default function Home() {
           Want to hire?
         </h1>
       <StickyScrollRevealDemo/>
-      <Button className='inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"'> Create your Own Jobs <ArrowRight className='ml-2'/></Button>
+      <Button className='inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"'><a href="http://localhost:5173/" className='flex items-center'> Create your Own Jobs <ArrowRight className='ml-2 text-sm'/></a></Button>
       </div>
       </section>
       <section className='m-8'>
@@ -191,14 +191,14 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-                  Try now →
+                  <a href="http://localhost:5173/" >Try now →</a>
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                 <a href="http://localhost:5173/" >Get Started Now</a> 
                 </CardItem>
               </div>
             </CardBody>
@@ -238,14 +238,14 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-                  Try now →
+                  <a href="http://localhost:5173/" >Try now →</a>
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                  <a href="http://localhost:5173/" >Get Started Now</a> 
                 </CardItem>
               </div>
             </CardBody>
@@ -285,14 +285,14 @@ export default function Home() {
                   as="button"
                   className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                 >
-                  Try now →
+                   <a href="http://localhost:5174/" >Try now →</a>
                 </CardItem>
                 <CardItem
                   translateZ={20}
                   as="button"
                   className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                 >
-                  Get Started Now
+                 <a href="http://localhost:5174/" >Get Started Now</a>
                 </CardItem>
               </div>
             </CardBody>

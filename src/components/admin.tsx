@@ -7,7 +7,7 @@ const content = [
   {
     title: "Company Profile",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+      "Registering your company is a breeze with our intuitive company creation form. Simply fill in the necessary details, and within minutes, your company profile will be up and running. Say goodbye to the hassle and complexity of traditional job posting methods, and experience the efficiency and convenience of our platform today. Join us and take the first step towards finding your next great hire effortlessly.",
     content: (
         <img src="/admin-1.png" alt="" className="rounded-md"/>
     ),
@@ -15,7 +15,7 @@ const content = [
   {
     title: "Real time analysis",
     description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "Our platform features an insightful graph displaying applications per month, giving you immediate access to critical hiring data. Monitor trends, evaluate the effectiveness of your job postings, and make informed decisions to optimize your recruitment process. Harness the benefits of real-time analytics and transform your hiring strategy with ease and precision.",
     content: (
     //   <div className="h-full w-full  flex items-center justify-center text-white">
     //     <Image
@@ -32,7 +32,7 @@ const content = [
   {
     title: "Create new Job posts",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Creating a new job post on our Job Recommendation System is a seamless and efficient process. Our intuitive platform ensures a hassle-free experience, allowing you to focus on finding the perfect candidates quickly and efficiently. Start posting jobs effortlessly today and streamline your hiring process. ",
     content: (
         <img src="/admin-3.png" alt="" className="rounded-md"/>
     ),
@@ -40,7 +40,7 @@ const content = [
   {
     title: "View Applications",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "Our platform allows you to see all applicants for your job postings in one convenient location. Each applicant profile includes a recommendation score, indicating the percentage match with the job requirements you specified. This score helps you quickly identify the most suitable candidates, streamlining your hiring process. Experience the ease of managing applications and optimizing your recruitment efforts",
     content: (
       
         <img src="/admin-4.png" alt=""className="rounded-md" />
